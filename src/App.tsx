@@ -92,7 +92,7 @@ export function App() {
   
   const [newCompany, setNewCompany] = useState({ 
     name: '', 
-    companyType: 'شركة فردية', 
+    companyType: 'منشأة فردية', 
     capital: 0,
     licenseStatus: 'قيد التنفيذ',
     status: 'قيد التنفيذ', 
@@ -282,7 +282,7 @@ export function App() {
       
       setNewCompany({ 
         name: '', 
-        companyType: 'شركة فردية', 
+        companyType: 'منشأة فردية', 
         capital: 0,
         licenseStatus: 'قيد التنفيذ',
         status: 'قيد التنفيذ', 
@@ -510,7 +510,7 @@ export function App() {
                     <Card.Body>
                       <h4 className="card-title">الشركات</h4>
                       <h3>{companies.length}</h3>
-                      <p>شركات مُأسسة</p>
+                      <p>شركات مؤسسة</p>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -776,7 +776,7 @@ export function App() {
                           value={newCompany.companyType}
                           onChange={e => setNewCompany({...newCompany, companyType: e.target.value})}
                         >
-                          <option value="شركة فردية">شركة فردية</option>
+                          <option value="شركة فردية">منشأة فردية</option>
                           <option value="شركة ذات مسؤولية محدودة">شركة ذات مسؤولية محدودة</option>
                           <option value="شركة مساهمة">شركة مساهمة</option>
                           <option value="شركة تضامن">شركة تضامن</option>
@@ -786,7 +786,7 @@ export function App() {
                     </Col>
                     <Col md={3}>
                       <Form.Group className="mb-3">
-                        <Form.Label>رأس المال (ريال)</Form.Label>
+                        <Form.Label>رأس المال (ج.م)</Form.Label>
                         <Form.Control 
                           type="number" 
                           placeholder="أدخل رأس المال" 
